@@ -1,9 +1,9 @@
 
 function validatePhoneNumber(){
     let account = document.getElementById("phoneNumber").value;
-    regexp = /^[0-9]{10}$/;
+    regexp = /^[0-9]{10,10}$/;
 
-    if (regexp.test(account) && account.length==10) {
+    if (regexp.test(account)) {
             document.getElementById("kq").innerText = "Valid phone number" + "(" + " số điện thoại hợp lệ " + ")";
 
     }
